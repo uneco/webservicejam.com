@@ -2,7 +2,10 @@
 #app
   h1 Web Service Jam
   p
-    a(:href='tweet', target='_blank') なに？
+    a(:href='tweet', target='_blank')
+      .image
+        img(src='./assets/cat.gif')
+      p なに？
 </template>
 
 <script lang="ts">
