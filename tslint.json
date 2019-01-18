@@ -1,19 +1,30 @@
 {
+  "extends": "tslint:latest",
   "defaultSeverity": "warning",
-  "extends": [
-    "tslint:recommended"
-  ],
-  "linterOptions": {
-    "exclude": [
-      "node_modules/**"
-    ]
-  },
   "rules": {
-    "quotemark": [true, "single"],
-    "indent": [true, "spaces", 2],
-    "interface-name": false,
-    "ordered-imports": false,
+    "curly": true,
+    "max-line-length": [true, 140],
+    "quotemark": [true, "single", "avoid-escape"],
+    "semicolon": [true, "never"],
+    "no-reference": false,
+    "await-promise": true,
+    "space-before-function-paren": [true, {
+      "anonymous": "always",
+      "named": "always",
+      "asyncArrow": "always"
+    }],
+    "no-bitwise": false,
+    "no-namespace": [true, "allow-declarations"],
+    "no-console": [false],
+    "no-consecutive-blank-lines": [true, 2],
+    "no-var-requires": false,
+    "max-classes-per-file": [false],
     "object-literal-sort-keys": false,
-    "no-consecutive-blank-lines": false
-  }
+    "ordered-imports": [false]
+  },
+  "jsRules": {
+    "curly": true
+  },
+  "rulesDirectory": [
+  ]
 }
